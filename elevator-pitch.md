@@ -1,9 +1,19 @@
 # Points clés pour mise en ligne choix cours
 
-## viviane's instructions for webiste info (TODO)
+## 1 Quel type de données vous allez travailler
 
-Consigne Viviane
-"Je vous propose donc de réfléchir à présenter ces 3 points :
-- Quel type de données vous allez travailler et pour faire quoi ?
-- Prévoir un exemple de visuel de ce qui peut être fait ;
-- Indiquer les modes de validation."
+- Selon structure du site et infos possibles, reprendre le morceau de présentation actuellement dans le syllabus (raccourcir au besoin)
+- Faire une version anglaise/française (et sans doute mentionner dans les présentations que ce sont des cours jumeaux)
+- Préciser les profils enseignants
+
+## 2 Préparation d'un visuel
+
+- Utiliser une des représentations de la ligne de couleur de W.E.B. Du Bois
+- Catchy/fun car visualisation en mode papier stylo gomme
+- Permettra de revenir aux sources historiques
+- Et d'illustrer les enjeux de visibilisation de certains sujets/thémtiques (inégalités raciales, etc.)
+
+## 3 Modes de validation
+
+- Reprendre ce que l'on a avancé dans le readme/syllabus
+- Modif coefficients si ajout d'un exo presentation orale

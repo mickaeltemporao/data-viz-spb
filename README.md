@@ -14,6 +14,7 @@
 - 10% | 02 une figure (prototype de vizu univariée)
 - 10% | 02 une figure (prototype de vizu bivariée)
 - 60% | 12 final belle figure
+<!-- Modif si jamais on ajoute une présentation orale -->
 
 **20/20 - Critères du rendu final idéal :**
 
