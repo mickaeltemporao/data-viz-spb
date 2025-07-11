@@ -8,7 +8,7 @@ Dans un monde saturé de données, la capacité à produire des visualisations e
 Cet atelier propose une initiation progressive à la data visualisation à l'aide du langage de programmation Python. En s'inscrivant dans une réflexion sur les usages de la data viz en sciences sociales, il s’agira d’apprendre à manipuler et analyser des données empiriques, puis à produire des visualisations prêtes à être publiées.
 
 <!-- TODO: PRÉCISER BASE ? -->
-La mobilisation de la base de données <span style="color: red;">MACHIN TRUC BIDULE</span> permettra de traiter des thématiques telles que la polarisation, participation, inégalités d’accès à l’information, confiance, etc.) qui feront l’objet d’exercices pratiques.
+La mobilisation de la base de données <span style="color: red;">MACHIN TRUC BIDULE</span> permettra de traiter des thématiques telles que la polarisation, la participation, les inégalités d’accès à l’information, la confiance, etc. qui feront l’objet d’exercices pratiques.
 
 ## Objectifs et organisation de l’atelier
 
@@ -16,7 +16,7 @@ La mobilisation de la base de données <span style="color: red;">MACHIN TRUC BID
 
 - Concevoir et produire des figures « publication ready » pour vos projets, mémoires, articles, etc.
 - Réaliser les étapes clés d’un projet de visualisation : chargement, préparation, analyse, et restitution graphique.
-- Choisir le type de graphique le plus pertinent selon la question posée et les données disponibles.
+- Choisir le type de visualisation le plus pertinent selon la question posée et les données disponibles.
 - Mobiliser les bibliothèques Python pertinentes pour la data viz.
 
 ### Descriptif général
@@ -87,6 +87,6 @@ Des réf bouquins ? Des réf sites web ? La doc des libraries ? -->
 - <https://www.data-to-viz.com/>
 
 ## À propos de l’enseignant-e
-<!-- TODO : PRÉCISER LES TYPES DE NUMÉROS DE CLAQUETTES POUR BRAODWAY ? -->
+<!-- TODO : PRÉCISER LES TYPES DE NUMÉROS DE CLAQUETTES POUR BROADWAY ? -->
 
-Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation de numéros de claquettes.
+Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation <span style="color: red;">de numéros de claquettes</span>.
