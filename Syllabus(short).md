@@ -3,12 +3,12 @@
 ## Présentation
 
 <!-- TODO: Réécrire pour simplifier et préciser base de données ? -->
-Dans un monde saturé de données, la capacité à produire des visualisations est devenue une compétence essentielle pour les chercheur·e·s, les journalistes ou tout·e professionnel·le se confrontant à des données dans ses travaux ou sa prise de décision. En effet, la visualisation de données permet de raconter une histoire, de mettre en évidence des tendances ou des contrastes, de rendre intelligible une information complexe et de passer son message dans un cadre académique ou professionnel.
+Dans un monde saturé de données, la capacité à produire des visualisations est devenue une compétence essentielle pour les chercheur·e·s, les journalistes ou tout·e professionnel·le se confrontant à des données dans ses travaux ou sa prise de décision. En effet, la visualisation de données permet de mettre en évidence des tendances, de rendre intelligible une information complexe et de passer son message dans un cadre académique ou professionnel.
 
-Cet atelier propose une initiation progressive à la data visualisation à l'aide du langage de programmation Python. En s'inscrivant dans une réflexion sur les usages de la data viz en sciences sociales, il s’agira d’apprendre à manipuler et analyser des données empiriques, puis à produire des visualisations prêtes à être publiées.
+Cet atelier propose une initiation progressive à la data visualisation à l'aide du langage Python. En s'inscrivant dans une réflexion sur les usages de la data viz en sciences sociales, il s’agira d’apprendre à manipuler et analyser des données empiriques, puis à produire des visualisations prêtes à être publiées.
 
 <!-- TODO: PRÉCISER BASE ? -->
-La mobilisation de la base de données <span style="color: red;">MACHIN TRUC BIDULE</span> permettra de traiter des thématiques telles que la polarisation, la participation, les inégalités d’accès à l’information, la confiance, etc. qui feront l’objet d’exercices pratiques.
+La mobilisation de la base de données **MACHIN TRUC BIDULE** permettra de traiter des thématiques telles que la polarisation, la participation, les inégalités d’accès à l’information, la confiance, etc. qui feront l’objet d’exercices pratiques.
 
 ## Objectifs et organisation de l’atelier
 
@@ -21,7 +21,7 @@ La mobilisation de la base de données <span style="color: red;">MACHIN TRUC BID
 
 ### Descriptif général
 <!-- PRÉCISER BASE -->
-Ce module est destiné aux étudiant·e·s souhaitant acquérir les bases de la visualisation de données à l'aide du langage Python. Aucun prérequis en visualisation ou en Python n’est exigé. Nous mobiliserons la base <span style="color: red;">MACHIN TRUC BIDULE</span> qui nous permettra d'explorer des thèmes tels que les différents types de polarisation, le knowledge gap, la participation, la confiance, etc.
+Ce module est destiné aux étudiant·e·s souhaitant acquérir les bases de la visualisation de données à l'aide du langage Python. Aucun prérequis en visualisation ou en Python n’est exigé. Nous mobiliserons la base **MACHIN TRUC BIDULE** qui nous permettra d'explorer des thèmes tels que les différents types de polarisation, le knowledge gap, la participation, la confiance, etc.
 
 ### Format du cours et programme prévisionnel
 
@@ -48,6 +48,8 @@ Bloc 3 – Visualisation de données (6 séances)
 - Visualisations univariées : histogrammes, barplots, boxplots
 - Visualisations bivariées : scatterplots, courbes, boxplots croisés
 - Visualisations cartographiques : initiation à la visualisation spatiale (hexbin maps, cartes choroplèthes)
+
+<!-- TODO: raffiner les types de visualisation qui seront présentées -->
 
 ## Calendrier et créneaux horaire
 
@@ -89,4 +91,4 @@ Des réf bouquins ? Des réf sites web ? La doc des libraries ? -->
 ## À propos de l’enseignant-e
 <!-- TODO : PRÉCISER LES TYPES DE NUMÉROS DE CLAQUETTES POUR BROADWAY ? -->
 
-Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation <span style="color: red;">de numéros de claquettes</span>.
+Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation **de numéros de claquettes**.
