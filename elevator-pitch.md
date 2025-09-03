@@ -1,5 +1,7 @@
 # Points clés pour mise en ligne choix cours
 
+N.B. : Premier jet désormais réalisé dans le doc genially.md
+
 ## 1 Quel type de données vous allez travailler
 
 - Selon structure du site et infos possibles, reprendre le morceau de présentation actuellement dans le syllabus (raccourcir au besoin)

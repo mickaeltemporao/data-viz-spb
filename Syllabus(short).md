@@ -5,7 +5,7 @@
 <!-- TODO: Réécrire pour simplifier et préciser base de données ? -->
 Dans un monde saturé de données, la capacité à produire des visualisations est devenue une compétence essentielle pour les chercheur·e·s, les journalistes ou tout·e professionnel·le se confrontant à des données dans ses travaux ou sa prise de décision. En effet, la visualisation de données permet de mettre en évidence des tendances, de rendre intelligible une information complexe et de passer son message dans un cadre académique ou professionnel.
 
-Cet atelier propose une initiation progressive à la data visualisation à l'aide du langage Python. En s'inscrivant dans une réflexion sur les usages de la data viz en sciences sociales, il s’agira d’apprendre à manipuler et analyser des données empiriques, puis à produire des visualisations prêtes à être publiées.
+Cet atelier propose une initiation progressive à la data visualisation à l'aide du langage Python. En s'inscrivant dans une réflexion sur les usages de la dataviz en sciences sociales, il s’agira d’apprendre à manipuler et analyser des données empiriques, puis à produire des visualisations prêtes à être publiées.
 
 <!-- TODO: PRÉCISER BASE ? -->
 La mobilisation de la base de données **MACHIN TRUC BIDULE** permettra de traiter des thématiques telles que la polarisation, la participation, les inégalités d’accès à l’information, la confiance, etc. qui feront l’objet d’exercices pratiques.
@@ -17,7 +17,7 @@ La mobilisation de la base de données **MACHIN TRUC BIDULE** permettra de trait
 - Concevoir et produire des figures « publication ready » pour vos projets, mémoires, articles, etc.
 - Réaliser les étapes clés d’un projet de visualisation : chargement, préparation, analyse, et restitution graphique.
 - Choisir le type de visualisation le plus pertinent selon la question posée et les données disponibles.
-- Mobiliser les bibliothèques Python pertinentes pour la data viz.
+- Mobiliser les bibliothèques Python pertinentes pour la dataviz.
 
 ### Descriptif général
 <!-- PRÉCISER BASE -->

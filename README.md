@@ -39,7 +39,7 @@
     traitement
     analyse
 
-6x data viz  
+6x dataviz  
 
     univariée
         bar plot 
