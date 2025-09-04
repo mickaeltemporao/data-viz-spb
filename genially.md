@@ -1,7 +1,6 @@
-# Test présenation pour Genially
-
 ## TITRE : Data Viz 101 EN/FR
-N.B. : Cet atelier existe aussi en anglais.
+
+N.B. : Cet atelier existe aussi en Anglais.
 
 ## IMAGE
 
