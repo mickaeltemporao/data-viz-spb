@@ -1,4 +1,4 @@
-# TITRE : Data Viz 101 EN/FR
+# TITRE : Data Viz 101 (FR)
 
 N.B. : Cet atelier existe aussi en Anglais.
 

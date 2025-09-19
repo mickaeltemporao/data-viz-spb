@@ -1,4 +1,4 @@
-# TITLE: Data Viz 101 EN/FR
+# TITLE: Data Viz 101 (EN)
 
 N.B.: This workshop is also available in English.
 
