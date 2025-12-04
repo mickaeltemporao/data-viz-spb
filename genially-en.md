@@ -1,6 +1,6 @@
 # TITLE: Data Viz 101 (EN)
 
-N.B.: This workshop is also available in English.
+N.B.: This workshop is also available in French.
 
 ## IMAGE
 
