@@ -89,7 +89,6 @@ Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation **de nu
 
 ## Misc 
 
-- [Easy acces to NBs?](https://colab.research.google.com/github/mickaeltemporao/materials/blob/main/notebooks/01-getting-started.ipynb)
 
 ## TODO
 - [ ] faire fig
@@ -106,4 +105,11 @@ Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation **de nu
     - mise en forme adéquate/proportions/lisibilité taille tikz...)
     - enregistre/exporter la figure (pdf, png, ...)
 - [ ] identifier sources utiles pour les critères
+- [ ] add links to modules (plan des séances avec liens)
+    - [Easy acces to NBs?](https://colab.research.google.com/github/mickaeltemporao/materials/blob/main/notebooks/01-getting-started.ipynb)
+
+ | Column1 | Column2 | Column3 | Column4 |
+ |---------|---------|---------|---------|
+ | Item1.1 | Item2.1 | Item3.1 | Item4.1 |
+ | Item1.2 | Item2.2 | Item3.2 | Item4.2 |
 
