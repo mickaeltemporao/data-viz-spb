@@ -63,7 +63,7 @@ Les rendus débouchent sur un rendu final prenant la forme d'une infographie abo
 
 <!-- TODO : (AVISER ET MODIFIER COEF SI INTÈGRE UNE PRÉSENTATION ORALE DE LA FIGURE ?) -->
 
-**Critères de réussite de la figure finale (xx/xx) :**
+**Critères de réussite de la figure finale :**
 
 - un code fonctionnel, reproductible de bout en bout
 - qui charge la base de données

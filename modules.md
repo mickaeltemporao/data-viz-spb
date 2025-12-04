@@ -1,24 +1,24 @@
 # Overview
 
-Bloc 1
-Module 1
-Module 2 
-Bloc 2
-Module 3 
-Module 4
-Module 5 - M1 | 10% | 02 modif titre/soustitre
-Module 6 
-Bloc 3
-Module 7 - M2 | 10% | 02 identifier 1 variable et calcul des statistiques descriptives
-Module 8
-Module 9 - M3 | 10% | 02 une figure (prototype de vizu univariée)
-Module 10
-Module 11 - M4 | 10% | 02 une figure (prototype de vizu bivariée)
-Module 12 - M5 | 60% | 12 final belle figure 
+**Bloc 1**  
+Module 1  
+Module 2  
+**Bloc 2**  
+Module 3  
+Module 4  
+Module 5 - M1 | 10% | 02 modif titre/soustitre  
+Module 6  
+**Bloc 3**  
+Module 7 - M2 | 10% | 02 identifier 1 variable et calcul des statistiques descriptives  
+Module 8  
+Module 9 - M3 | 10% | 02 une figure (prototype de vizu univariée)  
+Module 10  
+Module 11 - M4 | 10% | 02 une figure (prototype de vizu bivariée)  
+Module 12 - M5 | 60% | 12 final belle figure  
 
 ## Planning
 
-Idée après chaque milestone, prendre le(s) graph d'un groupe en classe et le reviewer lors d'une séance. Proposer des .améliorations
+Idée après chaque milestone, prendre le(s) graph d'un groupe en classe et le reviewer lors d'une séance. Proposer des améliorations
 
 Bloc 1 – Mise en place & premiers pas (2 séances)  
 *Objectif : permettre à chacun·e de disposer d’un environnement de travail fonctionnel*
