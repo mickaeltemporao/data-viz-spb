@@ -1,11 +1,14 @@
 # Overview
 
+Bloc 1
 Module 1
 Module 2 
+Bloc 2
 Module 3 
 Module 4
 Module 5 - M1 | 10% | 02 modif titre/soustitre
 Module 6 
+Bloc 3
 Module 7 - M2 | 10% | 02 identifier 1 variable et calcul des statistiques descriptives
 Module 8
 Module 9 - M3 | 10% | 02 une figure (prototype de vizu univariée)
@@ -30,20 +33,6 @@ Outils de travail Présentation de Notebooks
 Run code avec une belle viz
     - termine sur c'est quoi une belle viz?
         ? hexmap avec exemple de lecture
-        TODO:   
-        - [ ] faire fig
-        - [ ] notebook
-        - [ ] identifier les critères
-            - black & white
-            - title utile
-            - reading examples
-            - source
-            - code
-            - une figure = message
-            - figure carrées -> effets d'échelle attention biais de lecture
-            - mise en forme adéquate/proportions/lisibilité taille tikz...)
-            - enregistre/exporter la figure (pdf, png, ...)
-
 
 Séance 2 
 - Exécution d’une première visualisation à partir d'un code fourni par les enseignants
