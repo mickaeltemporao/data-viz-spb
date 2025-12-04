@@ -23,7 +23,7 @@ Idée après chaque milestone, prendre le(s) graph d'un groupe en classe et le r
 Bloc 1 – Mise en place & premiers pas (2 séances)  
 *Objectif : permettre à chacun·e de disposer d’un environnement de travail fonctionnel*
 
-Séance 1 
+Séance 1
 
 - Présentation du cours et des attendus
 La Data Viz kezako?
@@ -34,7 +34,8 @@ Run code avec une belle viz
     - termine sur c'est quoi une belle viz?
         ? hexmap avec exemple de lecture
 
-Séance 2 
+Séance 2
+
 - Exécution d’une première visualisation à partir d'un code fourni par les enseignants
 
 
