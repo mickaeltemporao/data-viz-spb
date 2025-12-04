@@ -55,3 +55,7 @@
 
     map
         (hex bin map)
+
+## Misc 
+
+- [Easy acces to NBs?](https://colab.research.google.com/github/mickaeltemporao/materials/blob/main/notebooks/01-getting-started.ipynb)
