@@ -80,4 +80,4 @@ hexmap = (hexes + labels + source_text).project(
 
 hexmap
 
-hexmap.save('test.pdf')
+hexmap.save('a-chart.pdf')
