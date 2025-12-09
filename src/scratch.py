@@ -3,9 +3,12 @@ import pandas as pd
 import geopandas as gpd
 import json
 
+# Dynamic view in browser... Oui j'utilise encore et encore vim...
 alt.renderers.enable("browser")
 
 # Load Datasets (No ANES ATM)
+# TODO include some useful ANES 2024 variable 
+# Update title, reading example accordingly
 url = (
     "https://raw.githubusercontent.com/holtzy/"
     "R-graph-gallery/refs/heads/master/DATA/us_states_hexgrid.geojson.json"
@@ -25,19 +28,19 @@ geojson = json.loads(gdf.to_json())
 
 # Prep Chart 
 
-# Hexes Layer
+## Hexes Layer
 hexes = (
     alt.Chart(alt.Data(values=geojson, format=alt.DataFormat(property="features")))
-    .mark_geoshape(stroke="white", strokeWidth=1)
+    .mark_geoshape(stroke="white", strokeWidth=2, fill="#69b3a2")
     .encode(
         tooltip=["properties.state:N"],
     )
 )
 
-# Labels Layer
+## Labels Layer
 labels = (
     alt.Chart(gdf)
-    .mark_text(fontSize=10, fontWeight="bold")
+    .mark_text(fontSize=14, fontWeight="bold", color="black")
     .encode(
         longitude="centroid_lon:Q",
         latitude="centroid_lat:Q",
@@ -45,14 +48,36 @@ labels = (
     )
 )
 
+## Text and stuff...
+chart_title = alt.TitleParams(
+    "US Hexmap Blablablalba, bon c'est le titre",
+    subtitle="And here commes the reading example...",
+    fontSize=20,
+    subtitleFontSize=14,
+    anchor="start",
+    fontWeight="bold"
+)
+
+source_text = alt.Chart().mark_text(
+    align='right',
+    baseline='bottom',
+    fontSize=12,
+    color='gray'
+).encode(
+    text=alt.value("Source: ANES 2024 XYZ"),
+    x=alt.value(800 - 10),
+    y=alt.value(500 - 10),
+)
+
 # Combine 
-hexmap = (hexes + labels).project(
+hexmap = (hexes + labels + source_text).project(
     type="mercator"  
 ).properties(
     width=800,
     height=500,
-    title="US States Hexgrid Map",
-)
+    title=chart_title
+).configure_view(stroke=None) # remove greyed square from source_text... there's probably an easier work around
 
 hexmap
 
+hexmap.save('test.pdf')
