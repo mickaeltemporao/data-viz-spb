@@ -30,7 +30,12 @@ geojson = json.loads(gdf.to_json())
 
 ## Hexes Layer
 hexes = (
-    alt.Chart(alt.Data(values=geojson, format=alt.DataFormat(property="features")))
+    alt.Chart(
+        alt.Data(
+            values=geojson, 
+            format=alt.DataFormat(property="features")
+        )
+    )
     .mark_geoshape(stroke="white", strokeWidth=2, fill="#69b3a2")
     .encode(
         tooltip=["properties.state:N"],
@@ -76,7 +81,8 @@ hexmap = (hexes + labels + source_text).project(
     width=800,
     height=500,
     title=chart_title
-).configure_view(stroke=None) # remove greyed square from source_text... there's probably an easier work around
+).configure_view(stroke=None) # remove greyed square from source_text... 
+                              # there's probably an easier work around
 
 hexmap
 
