@@ -1,7 +1,7 @@
 import altair as alt
 import geopandas as gpd
 import json
-# from src.polk_gap import main as gap
+from src.polk_gap import main as gap
 
 
 df_gap = gap()
@@ -25,21 +25,30 @@ gdf = gdf.rename(columns={"iso3166_2": "state"})
 gdf['centroid_lon'] = gdf.geometry.centroid.x
 gdf['centroid_lat'] = gdf.geometry.centroid.y
 
-# Cleanup
+# Merge Gap Variable
 gdf = gdf.merge(df_gap, on='state', how='left')
 
 # Prep Chart 
 
+
 ## Hexes Layer
 hexes = (
-    alt.Chart(
-        alt.Data(
-            url=data_hex_url, 
-        )
-    )
-    .mark_geoshape(stroke="white", strokeWidth=2, fill="#69b3a2")
+    alt.Chart(gdf)
+    # .mark_geoshape(stroke="white", strokeWidth=2, fill="#69b3a2")
+    .mark_geoshape(stroke="white", strokeWidth=3) 
     .encode(
-        tooltip=["properties.state:N"],
+        color=alt.Color("count:Q", scale=alt.Scale(scheme="greens")),
+        tooltip=["state:N", "count:Q"]
+    )
+)
+
+gap_labels = (
+    alt.Chart(gdf)
+    .mark_text(fontSize=12, fontWeight="bold")
+    .encode(
+        longitude="centroid_lon:Q",
+        latitude="centroid_lat:Q",
+        text=alt.Text("gender_gap:Q", format=".1%")
     )
 )
 
@@ -76,7 +85,7 @@ source_text = alt.Chart().mark_text(
 )
 
 # Combine 
-hexmap = (hexes + labels + source_text).project(
+hexmap = (hexes + gap_labels + source_text).project(
     type="mercator"  
 ).properties(
     width=800,
