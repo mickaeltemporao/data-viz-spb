@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load 2024 ANES dataset
 ANES_URL = 'https://raw.githubusercontent.com/datamisc/ts-2024/main/data.csv'
-# N_THRESHOLD = 30
+N_THRESHOLD = None
 VARS = {
     "V243001": 'state',  # state
     "V241551": 'gender',  # gender
@@ -23,10 +23,11 @@ def main():
     df['male']   = (df['gender'] == 1).astype(int)
     df['female'] = (df['gender'] == 2).astype(int)
 
-    # Keep states where n>=30
-    # mask = df['state'].value_counts() >= N_THRESHOLD
-    mask = (df['state'].value_counts())[mask].index
-    df = df[df['state'].isin(mask)]
+    if N_THRESHOLD:
+        # Keep states where n>=30
+        mask = df['state'].value_counts() >= N_THRESHOLD
+        mask = (df['state'].value_counts())[mask].index
+        df = df[df['state'].isin(mask)]
 
     pol_knowledge_vars = df.columns[df.columns.str.contains('polk')]
 
