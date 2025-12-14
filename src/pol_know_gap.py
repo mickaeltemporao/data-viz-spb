@@ -1,8 +1,8 @@
 import pandas as pd
 
-# Load the 2024 ANES dataset
-data_url_anes = 'https://raw.githubusercontent.com/datamisc/ts-2024/main/data.csv'
-N_THRESHOLD = 60
+# Load 2024 ANES dataset
+ANES_URL = 'https://raw.githubusercontent.com/datamisc/ts-2024/main/data.csv'
+N_THRESHOLD = 30
 VARS = {
     "V243001": 'state',  # state
     "V241551": 'gender',  # gender
@@ -14,27 +14,57 @@ VARS = {
     "V241615": 'polk_senat',   # party with most members in Senate
 }
 
-df = pd.read_csv(data_url_anes, compression='gzip')
+df = pd.read_csv(ANES_URL, compression='gzip')
 df = df[VARS.keys()].rename(columns=VARS)
 
-mask = df['V243001'].value_counts() >= N_THRESHOLD
-mask = (df['V243001'].value_counts())[mask].index
-df['state'] = df['V243001']
+# Keep male/female
+df = df[df['gender'].between(1,2)]
+df['male']   = (df['gender'] == 1).astype(int)
+df['female'] = (df['gender'] == 2).astype(int)
+
+# Keep states where n>=30
+mask = df['state'].value_counts() >= N_THRESHOLD
+mask = (df['state'].value_counts())[mask].index
 df = df[df['state'].isin(mask)]
 
-df = df[df['V241551'].between(1,2)]
 
-df['male']   = (df['V241551'] == 1).astype(int)
-df['female'] = (df['V241551'] == 2).astype(int)
-
-
-# === STEP 2: Select political knowledge items ===
-# Replace with actual variable names
-pol_knowledge_vars = [
-    # 'V241610',  # e.g., political knowledge catch
-    'V241612',  # e.g., "How many years in full term for US Senator"
-    'V241613',  # e.g., "Federal gov spending least"
-    'V241614',  # party with most members in House
-    'V241615'   # party with most members in Senate
-]
+pol_knowledge_vars = df.columns[df.columns.str.contains('polk')]
 print(df[pol_knowledge_vars].describe())
+
+def clean_knowledge_variable(series, correct_values):
+    # Replace invalid codes with NaN
+    series_cleaned = series.replace([-9, -7, -6, -5, -4, -1], pd.NA)
+    # Recode correct answers as 1, others as 0
+    series_cleaned = series_cleaned.isin(
+        correct_values
+    ).astype(int)
+    return series_cleaned
+
+
+df["polk_years"] = clean_knowledge_variable(
+    df["polk_years"], [6]
+)
+df["polk_spend"] = clean_knowledge_variable(
+    df["polk_spend"], [4]
+)
+df["polk_house"] = clean_knowledge_variable(
+    df["polk_house"], [2]
+)
+df["polk_senat"] = clean_knowledge_variable(
+    df["polk_senat"], [1]
+)
+df['pol_knowledge_score'] = df[pol_knowledge_vars].sum(axis=1, skipna=True)
+
+
+grouped = df.groupby(['state', 'gender'])['pol_knowledge_score'].agg(['mean','count','std'])
+grouped['mean'].unstack().assign(gender_gap=lambda x: x[1] - x[2])
+
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+
+formula = 'pol_knowledge_score ~ male + age + education'
+reg = smf.ols(formula=formula, data=df).fit()
+print(reg.summary())
+
+
