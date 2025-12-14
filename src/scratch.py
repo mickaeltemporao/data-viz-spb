@@ -1,4 +1,5 @@
 import altair as alt
+import numpy as np
 import pandas as pd
 import geopandas as gpd
 import json
@@ -9,19 +10,13 @@ alt.renderers.enable("browser")
 # Load Datasets (No ANES ATM)
 # TODO include some useful ANES 2024 variable 
 
-# Load the 2024 ANES example dataset
-data_url = 'https://raw.githubusercontent.com/datamisc/ts-2024/main/data.csv'
-df = pd.read_csv(data_url, compression='gzip')
-
-df['V243001'].value_counts()
-
 # Update title, reading example accordingly
-url = (
+data_hex_url = (
     "https://raw.githubusercontent.com/holtzy/"
     "R-graph-gallery/refs/heads/master/DATA/us_states_hexgrid.geojson.json"
 )
 
-gdf = gpd.read_file(url)
+gdf = gpd.read_file(data_hex_url)
 gdf = gdf.rename(columns={"iso3166_2": "state"})
 
 # Compute centroids for labels
