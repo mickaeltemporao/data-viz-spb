@@ -28,9 +28,7 @@ def main():
     mask = (df['state'].value_counts())[mask].index
     df = df[df['state'].isin(mask)]
 
-
     pol_knowledge_vars = df.columns[df.columns.str.contains('polk')]
-    print(df[pol_knowledge_vars].describe())
 
     def clean_knowledge_variable(series, correct_values):
         # Replace invalid codes with NaN
@@ -58,11 +56,11 @@ def main():
 
 
     grouped = df.groupby(['state', 'gender'])['polk_score'].agg(['mean','count','std'])
-    gap = grouped['mean'].unstack().assign(gender_gap=lambda x: x[1] - x[2]).sort_values('gender_gap', ascending=False)
     # TODO: maybe include count so that we can shade figure by N? 
-    print(gap)
+    gap = grouped['mean'].unstack().assign(gender_gap=lambda x: x[1] - x[2]).sort_values('gender_gap', ascending=False)
+    gap = gap.reset_index()
 
-    return gap
+    return gap[['state', 'gender_gap']]
 
 if __name__ == "__main__":
     main()
