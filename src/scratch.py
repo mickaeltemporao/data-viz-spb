@@ -28,8 +28,9 @@ gdf['centroid_lat'] = gdf.geometry.centroid.y
 # Merge Gap Variable
 gdf = gdf.merge(df_gap, on='state', how='left')
 
-# Prep Chart 
+gdf['label'] = gdf['state'] + "\n" + (gdf['gender_gap'] * 100).round(1).astype(str) + "%"
 
+# Chart Prep
 
 ## Hexes Layer
 hexes = (
@@ -37,25 +38,26 @@ hexes = (
     # .mark_geoshape(stroke="white", strokeWidth=2, fill="#69b3a2")
     .mark_geoshape(stroke="white", strokeWidth=3) 
     .encode(
-        color=alt.Color("count:Q", scale=alt.Scale(scheme="greens")),
-        tooltip=["state:N", "count:Q"]
-    )
-)
-
-gap_labels = (
-    alt.Chart(gdf)
-    .mark_text(fontSize=12, fontWeight="bold")
-    .encode(
-        longitude="centroid_lon:Q",
-        latitude="centroid_lat:Q",
-        text=alt.Text("gender_gap:Q", format=".1%")
+        # color=alt.Color("count:Q", scale=alt.Scale(scheme="greens")),
+        color=alt.Color(
+            "gender_gap:Q",
+            scale=alt.Scale(scheme="redblue", domainMid=0),
+            legend=alt.Legend(title="Gender Gap")
+        ),
+        tooltip=["state:N", alt.Tooltip("gender_gap:Q", format=".1%"), "count:Q"]
     )
 )
 
 ## Labels Layer
-labels = (
+hex_labels = (
     alt.Chart(gdf)
-    .mark_text(fontSize=14, fontWeight="bold", color="black")
+    .mark_text(
+        fontSize=14, 
+        fontWeight="bold", 
+        color="black", 
+        align="center", 
+        baseline="middle"
+    )
     .encode(
         longitude="centroid_lon:Q",
         latitude="centroid_lat:Q",
@@ -84,15 +86,13 @@ source_text = alt.Chart().mark_text(
     y=alt.value(500 - 10),
 )
 
-# Combine 
-hexmap = (hexes + gap_labels + source_text).project(
-    type="mercator"  
+hexmap = (hexes + hex_labels + source_text).project(
+    type="mercator"
 ).properties(
     width=800,
     height=500,
     title=chart_title
-).configure_view(stroke=None) # remove greyed square from source_text... 
-                              # there's probably an easier work around
+).configure_view(stroke=None)
 
 hexmap
 
