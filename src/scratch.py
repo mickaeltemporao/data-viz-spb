@@ -8,6 +8,13 @@ alt.renderers.enable("browser")
 
 # Load Datasets (No ANES ATM)
 # TODO include some useful ANES 2024 variable 
+
+# Load the 2024 ANES example dataset
+data_url = 'https://raw.githubusercontent.com/datamisc/ts-2024/main/data.csv'
+df = pd.read_csv(data_url, compression='gzip')
+
+df['V243001'].value_counts()
+
 # Update title, reading example accordingly
 url = (
     "https://raw.githubusercontent.com/holtzy/"
