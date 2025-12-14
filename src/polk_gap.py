@@ -69,7 +69,7 @@ def main():
     gap
     gap.columns.name = None
 
-    return gap[['state', 'gender_gap']]
+    return gap[['state', 'gender_gap', 'count']]
 
 if __name__ == "__main__":
     main()
