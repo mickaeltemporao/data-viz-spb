@@ -58,8 +58,11 @@ def main():
 
 
     grouped = df.groupby(['state', 'gender'])['polk_score'].agg(['mean','count','std'])
+    gap = grouped['mean'].unstack().assign(gender_gap=lambda x: x[1] - x[2]).sort_values('gender_gap', ascending=False)
+    # TODO: maybe include count so that we can shade figure by N? 
+    print(gap)
 
-    return grouped['mean'].unstack().assign(gender_gap=lambda x: x[1] - x[2]).sort_values('gender_gap', ascending=False)
+    return gap
 
 if __name__ == "__main__":
     main()
