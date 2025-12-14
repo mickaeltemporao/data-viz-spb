@@ -1,8 +1,10 @@
 import altair as alt
-import numpy as np
-import pandas as pd
 import geopandas as gpd
 import json
+# from src.polk_gap import main as gap
+
+
+df_gap = gap()
 
 # Dynamic view in browser... Oui j'utilise encore et encore vim...
 alt.renderers.enable("browser")
@@ -24,9 +26,7 @@ gdf['centroid_lon'] = gdf.geometry.centroid.x
 gdf['centroid_lat'] = gdf.geometry.centroid.y
 
 # Cleanup
-gdf = gdf.set_crs("EPSG:4326", allow_override=True)
-gdf = gdf.drop(columns=['created_at', 'updated_at'])
-geojson = json.loads(gdf.to_json())
+gdf = gdf.merge(df_gap, on='state', how='left')
 
 # Prep Chart 
 
@@ -34,8 +34,7 @@ geojson = json.loads(gdf.to_json())
 hexes = (
     alt.Chart(
         alt.Data(
-            values=geojson, 
-            format=alt.DataFormat(property="features")
+            url=data_hex_url, 
         )
     )
     .mark_geoshape(stroke="white", strokeWidth=2, fill="#69b3a2")
