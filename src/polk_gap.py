@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load 2024 ANES dataset
 ANES_URL = 'https://raw.githubusercontent.com/datamisc/ts-2024/main/data.csv'
-N_THRESHOLD = 30
+# N_THRESHOLD = 30
 VARS = {
     "V243001": 'state',  # state
     "V241551": 'gender',  # gender
@@ -24,7 +24,7 @@ def main():
     df['female'] = (df['gender'] == 2).astype(int)
 
     # Keep states where n>=30
-    mask = df['state'].value_counts() >= N_THRESHOLD
+    # mask = df['state'].value_counts() >= N_THRESHOLD
     mask = (df['state'].value_counts())[mask].index
     df = df[df['state'].isin(mask)]
 
@@ -57,8 +57,16 @@ def main():
 
     grouped = df.groupby(['state', 'gender'])['polk_score'].agg(['mean','count','std'])
     # TODO: maybe include count so that we can shade figure by N? 
-    gap = grouped['mean'].unstack().assign(gender_gap=lambda x: x[1] - x[2]).sort_values('gender_gap', ascending=False)
+    gap = grouped['mean'].unstack().assign(
+        gender_gap=lambda x: x[1] - x[2]
+    ).sort_values(
+        'gender_gap', ascending=False
+    )
+    gap['count'] =  grouped['count'].unstack().sum(axis=1)
+
     gap = gap.reset_index()
+    gap
+    gap.columns.name = None
 
     return gap[['state', 'gender_gap']]
 
