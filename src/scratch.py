@@ -1,6 +1,5 @@
 import altair as alt
 import geopandas as gpd
-import json
 from src.polk_gap import main as gap
 
 
@@ -28,6 +27,9 @@ gdf['centroid_lat'] = gdf.geometry.centroid.y
 # Merge Gap Variable
 gdf = gdf.merge(df_gap, on='state', how='left')
 
+gdf['gender_gap'] = gdf['gender_gap'] *-1
+
+
 gdf['label'] = gdf['state'] + "\n" + (gdf['gender_gap'] * 100).round(1).astype(str) + "%"
 
 # Chart Prep
@@ -41,7 +43,7 @@ hexes = (
         # color=alt.Color("count:Q", scale=alt.Scale(scheme="greens")),
         color=alt.Color(
             "gender_gap:Q",
-            scale=alt.Scale(scheme="redblue", domainMid=0),
+            scale=alt.Scale(scheme="redgrey", domainMid=0),
             legend=alt.Legend(title="Gender Gap")
         ),
         tooltip=["state:N", alt.Tooltip("gender_gap:Q", format=".1%"), "count:Q"]
@@ -65,10 +67,16 @@ hex_labels = (
     )
 )
 
+subtitle = [
+    "In Massachusetts, the gender gap in political knowledge is 18.7 percentage points, with",
+    "men answering, on average, nearly one-fifth more of the political knowledge items correctly",
+    "than women."
+]
+
 ## Text and stuff...
 chart_title = alt.TitleParams(
-    "US Hexmap Blablablalba, bon c'est le titre",
-    subtitle="And here commes the reading example...",
+    "Political Knowledge Gender Gap in the US",
+    subtitle=subtitle,
     fontSize=20,
     subtitleFontSize=14,
     anchor="start",
@@ -95,5 +103,6 @@ hexmap = (hexes + hex_labels + source_text).project(
 ).configure_view(stroke=None)
 
 hexmap
+
 
 hexmap.save('a-chart.pdf')
