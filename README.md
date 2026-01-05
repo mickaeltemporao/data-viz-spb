@@ -1,5 +1,7 @@
 # Description de l’atelier
 
+DEADLINE Finale 10 AVRIL MAX
+
 ## Présentation
 
 Comment faire passer un message simple à partir d'informations complexes?
