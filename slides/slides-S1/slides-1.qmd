@@ -97,7 +97,7 @@ Dataviz / infographie / figures scientifiques
 ---
 
 ## Organisation du cours
-- Le [syllabus](https://github.com/mickaeltemporao/data-viz-spb/blob/main/README.md) précise tout ça
+- Le [syllabus](https://github.com/SciencesPoBordeaux/data-viz/blob/main/README.md) précise tout ça
 - (Les slides suivantes reprennent les infos)
 
 ---
@@ -130,7 +130,7 @@ Le module est organisé en séquences progressives :
 *Objectif : permettre à chacun·e de disposer d’un environnement de travail fonctionnel*
 
 - Présentation du cours et des attendus
-- Installation des environnements de développement (VS Code ou Google Colab) et prise en main
+- Présentation de l'environnement de développement (Google Colab) et prise en main
 - Exécution d’une première visualisation à partir d'un code fourni par les enseignants
 
 ---
@@ -184,6 +184,7 @@ Le module est organisé en séquences progressives :
 ## Outils
 - [Python](https://www.python.org/)
 - [Altair](https://altair-viz.github.io/)
+- [Google Colab ](https://colab.research.google.com/)
 
 ![](img/altair.png){style="display:block; margin:auto;"}
 
@@ -192,12 +193,11 @@ Le module est organisé en séquences progressives :
 ## Ressources
 
 Plein, vues plus tard, mais notamment :
-<span style="color: red;">
-- truc
-- bidule
-- chose
-- et la liste ici : lien biblio syllabus git ?
-</span>
+
+- [From Data to Viz](https://www.data-to-viz.com/)
+- [Dataviz Catalogue](https://datavizcatalogue.com/)
+- et une liste de ressources [ici](https://github.com/SciencesPoBordeaux/data-viz/blob/main/ressources.md)
+
 
 ---
 

@@ -1,17 +1,15 @@
 # Description de l’atelier
 
-DEADLINE Finale 10 AVRIL MAX
-
 ## Présentation
 
-Comment faire passer un message simple à partir d'informations complexes?
+Comment faire passer un message simple à partir d'informations complexes ?  
 Dans un monde où les données sont omniprésentes, la capacité à produire des visualisations est devenue une compétence essentielle pour les journalistes, chercheur·e·s ou tout·e professionnel·le se confrontant à des données dans ses travaux ou sa prise de décision.
 
 Cet atelier propose une initiation progressive à la data visualisation à l'aide du langage Python. Aucun prérequis dans ces domaines n'est exigé.
 
 En s'inscrivant dans une réflexion sur les usages de la dataviz en sciences sociales, il s'agira d'apprendre à manipuler et simplifier des données empiriques pour produire des visualisations claires ayant un message précis. Tout au long du module des thèmes tels que la polarisation, le knowledge gap, la participation électorale ou encore la confiance politique seront explorés.
 
-## À la fin du semestre, vous saurez :
+## À la fin du semestre, vous saurez
 
 - Concevoir et produire des graphiques pour vos projets.
 - Réaliser les étapes clés d'un projet de visualisation : chargement, préparation, analyse, et production graphique.
@@ -26,7 +24,7 @@ Bloc 1 – Mise en place & premiers pas (2 séances)
 *Objectif : permettre à chacun·e de disposer d’un environnement de travail fonctionnel*
 
 - Présentation du cours et des attendus
-- Installation des environnements de développement (VS Code ou Google Colab) et prise en main
+- Présentation de l'environnement de développement (Google Colab) et prise en main
 - Exécution d’une première visualisation à partir d'un code fourni par les enseignants
 
 Bloc 2 – Initiation à Python et à Pandas (4 séances)  
@@ -44,6 +42,8 @@ Bloc 3 – Visualisation de données (6 séances)
 - Visualisations bivariées : scatterplots, courbes, boxplots croisés
 - Visualisations cartographiques : initiation à la visualisation spatiale (hexbin maps, cartes choroplèthes)
 
+*Ce programme est provisoire et est susceptible de changer selon les besoins des étudiant.es et le déroulement du cours.*
+
 <!-- TODO: raffiner les types de visualisation qui seront présentées -->
 
 ## Calendrier et créneaux horaire
@@ -55,15 +55,13 @@ Selon le groupe et l'enseignant.
 Ce module, adoptant une approche incrémentale, propose une évaluation continue par la remise de rendus intermédiaires.
 Les rendus débouchent sur un rendu final prenant la forme d'une infographie aboutie.
 
-| Évaluation                                                              | Poids | Description                                                                 |
-|---------------------------|-----------------|-----------------------------|
-| Modifications de titres/sous-titres                                     | 10%   | Capacité à choisir des éléments éditoriaux clairs et pertinents             |
-| Identification de deux variables et calcul de statistiques descriptives | 10%   | Rigueur dans le choix des variables et la qualité du traitement             |
-| Prototype de visualisation univariée                                    | 10%   | Pertinence du graphique et lisibilité                                       |
-| Prototype de visualisation bivariée                                     | 10%   | Pertinence du graphique et lisibilité                                       |
-| Figure finale                                                           | 60%   | Une visualisation aboutie, respectant tous les critères de qualité attendus |
-
-<!-- TODO : (AVISER ET MODIFIER COEF SI INTÈGRE UNE PRÉSENTATION ORALE DE LA FIGURE ?) -->
+| Date rendu         | Évaluation                                                              | Poids | Description                                                                 |
+|--------------------|-------------------------------------------------------------------------|-------|-----------------------------------------------------------------------------|
+| Séance 5           | Modifications de titres/sous-titres                                     | 10%   | Capacité à choisir des éléments éditoriaux clairs et pertinents             |
+| Séance 7           | Identification de deux variables et calcul de statistiques descriptives | 10%   | Rigueur dans le choix des variables et la qualité du traitement             |
+| Séance 9           | Prototype de visualisation univariée                                    | 10%   | Pertinence du graphique et lisibilité                                       |
+| Séance 11          | Prototype de visualisation bivariée                                     | 10%   | Pertinence du graphique et lisibilité                                       |
+| Final (**10 avril**)   | Figure finale                                                           | 60%   | Une visualisation aboutie, respectant tous les critères de qualité attendus |
 
 **Critères de réussite de la figure finale :**
 
@@ -80,40 +78,19 @@ Les rendus débouchent sur un rendu final prenant la forme d'une infographie abo
 
 ### Bibliographie
 
-<!-- TODO : COMPLÉTER UNE BIBLIO ?
-Des réf bouquins ? Des réf sites web ? La doc des libraries ? -->
-- <https://www.data-to-viz.com/>
+- [From Data to Viz](https://www.data-to-viz.com/)
+- [Dataviz Catalogue](https://datavizcatalogue.com/)
+- [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
+- et une liste de ressources [ici](https://github.com/SciencesPoBordeaux/data-viz/blob/main/ressources.md)
 
 ## À propos des enseignant-e
 <!-- TODO : PRÉCISER LES TYPES DE NUMÉROS DE CLAQUETTES POUR BROADWAY ? -->
 
 Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation **de numéros de claquettes**.
 
-## Misc 
+## Liens
 
+### Liens Séance 1
 
-## TODO
-- [ ] faire fig
-- [ ] notebook
-- [ ] sketch out modules 2-...
-- [ ] identifier les critères d'un bon graph
-    - black & white
-    - title utile
-    - reading examples
-    - source
-    - code
-    - une figure = message
-    - figure carrées -> effets d'échelle attention biais de lecture
-    - mise en forme adéquate/proportions/lisibilité taille tikz...)
-    - enregistre/exporter la figure (pdf, png, ...)
-- [ ] identifier sources utiles pour les critères
-- [ ] add links to modules (plan des séances avec liens)
-    - [Easy acces to NBs?](https://colab.research.google.com/github/mickaeltemporao/materials/blob/main/notebooks/01-getting-started.ipynb)
-
- | Column1 | Column2 | Column3 | Column4 |
- |---------|---------|---------|---------|
- | Item1.1 | Item2.1 | Item3.1 | Item4.1 |
- | Item1.2 | Item2.2 | Item3.2 | Item4.2 |
-
-
-- [Demo?](https://githubtocolab.com/mickaeltemporao/data-viz-spb/blob/main/notebooks/demo_intro.ipynb)
+- [slides-S1](https://sciencespobordeaux.github.io/data-viz/slides/slides-S1/slides-1.html)
+- [Demo_intro](https://githubtocolab.com/SciencesPoBordeaux/data-viz/blob/main/notebooks/demo_intro.ipynb)

@@ -47,7 +47,7 @@ Bloc 1 – Mise en place & premiers pas (2 séances)
 *Objectif : permettre à chacun·e de disposer d’un environnement de travail fonctionnel*
 
 - Présentation du cours et des attendus
-- Installation des environnements de développement (VS Code ou Google Colab) et prise en main
+- Présentation de l'environnement de développement (Google Colab) et prise en main
 - Exécution d’une première visualisation à partir d'un code fourni par les enseignants
 
 Bloc 2 – Initiation à Python et à Pandas (4 séances)  
@@ -66,5 +66,3 @@ Bloc 3 – Visualisation de données (6 séances)
 - Visualisations cartographiques : initiation à la visualisation spatiale (hexbin maps, cartes choroplèthes)
 
 <!-- TODO: raffiner les types de visualisation qui seront présentées -->
-
-
