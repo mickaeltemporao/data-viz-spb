@@ -1,0 +1,227 @@
+---
+title: "Data Viz 101"
+subtitle: "Initiation à la datavizualisation en Python"
+author: "Léo Mignot & Mickael Temporão"
+date: "2026-01-08"
+#format: pptx
+format: 
+    revealjs:
+        scrollable: true
+        slideNumber: true
+        embed-resources: true
+        theme: default
+    # default
+    # beige
+    # blood
+    # dark
+    # default
+    # dracula
+    # league
+    # moon
+    # night
+    # serif
+    # simple
+    # sky
+    # solarized
+
+---
+
+## Dataviz everywhere
+Pas nouveau :
+
+- W.E.B Du Bois, [La ligne de couleur](https://editions-b42.com/produit/la-ligne-de-couleur-de-w-e-b-du-bois/)
+
+Mais se diffuse/démocratise :
+
+- production plus simple avec numérique (crayon vs. ordi)
+- et plus récemment diffusion en ligne, viralité
+    - *#dataviz*
+
+![](img/Du-Bois.jpg){style="position: absolute; top: 0; right: 0; height: auto !important; max-width: 200px !important; z-index: 1000;"}
+
+---
+
+## But why ? 
+
+> never trust summary statistics alone; always visualize your data
+
+![Datasaurus par Alberto Cairo](img/datasaurus.gif){style="display:block; margin:auto;"}
+
+---
+
+## Définition-ish
+
+Dataviz / infographie / figures scientifiques
+
+- Same same, but different ?
+- Diffuser des résultats
+- Les rendre compréhensibles
+- Mettre en valeur et transmettre l’information
+
+---
+
+## "can't see anything"
+
+::: {.columns}
+::: {.column width="40%"}
+![](img/table-regression.png)
+:::
+
+::: {.column width="60%"}
+![](img/fig-forest-plot.png)
+:::
+:::
+
+---
+
+## Graph crimes
+::: {.columns}
+::: {.column width="40%"}
+![](img/popstar-size.png){style="display:block; margin:auto; width: 400px;"}
+:::
+
+::: {.column width="60%"}
+![](img/france-info.png)
+:::
+:::
+
+
+---
+
+## Tour de table
+- Léo & Mickael
+- Vous !
+  
+![](img/who_are_you.jpg){style="display:block; margin:auto;"}
+
+---
+
+## Organisation du cours
+- Le [syllabus](https://github.com/mickaeltemporao/data-viz-spb/blob/main/README.md) précise tout ça
+- (Les slides suivantes reprennent les infos)
+
+---
+
+## Objectifs de ce cours :
+
+À la fin du semestre, vous saurez :
+
+- **Concevoir** et **produire** des graphiques pour vos projets.
+- Réaliser les **étapes clés** d'un projet de visualisation : *chargement, préparation, analyse, et production graphique*.
+- **Choisir** un **type** de visualisation pertinent selon les données et le **message** que vous souhaitez véhiculer.
+- Mobiliser des bibliothèques **Python** devenues incontournables en data visualisation.
+
+---
+
+## Format du cours et programme
+
+- Format **atelier**
+- Dimension **pratique**, avec des temps d'application et exercices sur des cas concrets.
+
+Le module est organisé en séquences progressives :
+
+1. installation de l’environnement de travail,
+2. introduction au traitement et la manipulation de données,
+3. réalisation de différents types de visualisations.
+
+---
+
+## Bloc 1 – Mise en place & premiers pas (2 séances)  
+*Objectif : permettre à chacun·e de disposer d’un environnement de travail fonctionnel*
+
+- Présentation du cours et des attendus
+- Installation des environnements de développement (VS Code ou Google Colab) et prise en main
+- Exécution d’une première visualisation à partir d'un code fourni par les enseignants
+
+---
+
+## Bloc 2 – Initiation à Python et à Pandas (4 séances)  
+*Objectif : acquérir les bases de la programmation et du traitement de données*
+
+- Syntaxe de base en Python
+- Introduction à Pandas : chargement de bases, nettoyage, recodage, analyse
+- Manipulation de variables et statistiques descriptives
+- Préparation des données pour la visualisation
+
+---
+
+## Bloc 3 – Visualisation de données (6 séances)  
+*Objectif : maîtriser les grands types de visualisation selon la nature des variables*
+
+- Visualisations univariées : histogrammes, barplots, boxplots
+- Visualisations bivariées : scatterplots, courbes, boxplots croisés
+- Visualisations cartographiques : initiation à la visualisation spatiale (hexbin maps, cartes choroplèthes)
+
+<!-- modifier selon orga repartition des visu -->
+
+---
+
+## Évaluation : modalités et attendus
+
+- Approche incrémentale
+- Remise de (petits) rendus intermédiaires
+- Les rendus débouchent sur un rendu final prenant la forme d'une infographie aboutie
+- Travail en groupe
+
+---
+
+## Les rendus
+
+<!-- tricher avec un div et une taille de police plus petite parce qu'on va pas se casser les pieds à faire un css specifique pour les tables -->
+
+<div style="font-size: 0.7em;">
+| Date rendu         | Évaluation                                                              | Poids | Description                                                                 |
+|--------------------|-------------------------------------------------------------------------|-------|-----------------------------------------------------------------------------|
+| Séance 5           | Modifications de titres/sous-titres                                     | 10%   | Capacité à choisir des éléments éditoriaux clairs et pertinents             |
+| Séance 7           | Identification de deux variables et calcul de statistiques descriptives | 10%   | Rigueur dans le choix des variables et la qualité du traitement             |
+| Séance 9           | Prototype de visualisation univariée                                    | 10%   | Pertinence du graphique et lisibilité                                       |
+| Séance 11          | Prototype de visualisation bivariée                                     | 10%   | Pertinence du graphique et lisibilité                                       |
+| Final (10 avril)   | Figure finale                                                           | 60%   | Une visualisation aboutie, respectant tous les critères de qualité attendus |
+</div>
+
+---
+
+## Outils
+- [Python](https://www.python.org/)
+- [Altair](https://altair-viz.github.io/)
+
+![](img/altair.png){style="display:block; margin:auto;"}
+
+---
+
+## Ressources
+
+Plein, vues plus tard, mais notamment :
+<span style="color: red;">
+- truc
+- bidule
+- chose
+- et la liste ici : lien biblio syllabus git ?
+</span>
+
+---
+
+## Je code comme une brouette
+
+::: {.columns}
+::: {.column width="50%"}
+![](img/cat.gif){style="display:block; margin:auto; width: 400px;"}
+:::
+
+::: {.column width="50%"}
+![](img/bugs.jpeg){style="display:block; margin:auto;"}
+:::
+:::
+
+---
+
+## Sucking
+[Andrew Heiss : sucking](https://datavizsp25.classes.andrewheiss.com/slides/01-slides.html#58)
+
+- Normal d'avoir des erreurs
+- Importance des petites victoires
+- Vos enseignants aussi galèrent : on fait le pari de découvrir Altair 
+
+> "Push through. You’ll suck less."
+> 
+> (Hadley Wickham, author of {ggplot2})
