@@ -69,7 +69,7 @@ Les rendus débouchent sur un rendu final prenant la forme d'une infographie abo
 
 - un code fonctionnel, reproductible de bout en bout
 - qui charge la base de données
-- identifie les varibles
+- identifie les variables
 - les prépare
 - crée une figure avec :
   - un titre explicite
