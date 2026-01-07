@@ -116,5 +116,4 @@ Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation **de nu
  | Item1.2 | Item2.2 | Item3.2 | Item4.2 |
 
 
-- [NB](https://colab.research.google.com/github/mickaeltemporao/data-viz-spb/blob/main/notebooks/demo-intro.ipynb)
-- [vleo](https://githubtocolab.com/mickaeltemporao/data-viz-spb/blob/main/notebooks/demo_intro.ipynb)
+- [Demo?](https://githubtocolab.com/mickaeltemporao/data-viz-spb/blob/main/notebooks/demo_intro.ipynb)
