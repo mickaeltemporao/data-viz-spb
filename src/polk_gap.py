@@ -74,9 +74,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-"""
-In Massachusetts, the gender gap in political knowledge is 18.7 percentage points, with men answering, on average, 
-nearly one-fifth more of the political knowledge items correctly than women. 
-This represents one of the largest gender differences in political knowledge observed across states in 2024.
-"""
-

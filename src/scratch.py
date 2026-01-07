@@ -34,17 +34,18 @@ gdf['label'] = gdf['state'] + "\n" + (gdf['gender_gap'] * 100).round(1).astype(s
 
 # Chart Prep
 
+tmp_val = max([abs(gdf['gender_gap'].min()), abs(gdf['gender_gap'].max())])
+domain_range = [-tmp_val, tmp_val]
+
 ## Hexes Layer
 hexes = (
     alt.Chart(gdf)
-    # .mark_geoshape(stroke="white", strokeWidth=2, fill="#69b3a2")
     .mark_geoshape(stroke="white", strokeWidth=3) 
     .encode(
-        # color=alt.Color("count:Q", scale=alt.Scale(scheme="greens")),
         color=alt.Color(
             "gender_gap:Q",
-            scale=alt.Scale(scheme="redgrey", domainMid=0),
-            legend=alt.Legend(title="Gender Gap")
+            scale=alt.Scale(scheme="redgrey", domainMid=0, domain=domain_range),
+            legend=alt.Legend(title=["Inégalité de", "Genre"])
         ),
         tooltip=["state:N", alt.Tooltip("gender_gap:Q", format=".1%"), "count:Q"]
     )
@@ -68,14 +69,13 @@ hex_labels = (
 )
 
 subtitle = [
-    "In Massachusetts, the gender gap in political knowledge is 18.7 percentage points, with",
-    "men answering, on average, nearly one-fifth more of the political knowledge items correctly",
-    "than women."
+    "Au Massachusetts, en 2024, l'écart de connaissance politique entre les hommes et les femmes",
+    "est de -18,7 points de pourcentage. Les valeurs négatives indiquent un biais en faveur des hommes."
 ]
 
 ## Text and stuff...
 chart_title = alt.TitleParams(
-    "Political Knowledge Gender Gap in the US",
+    "Inégalités de connaissance politique aux États-Unis selon le genre",
     subtitle=subtitle,
     fontSize=20,
     subtitleFontSize=14,
@@ -89,9 +89,9 @@ source_text = alt.Chart().mark_text(
     fontSize=12,
     color='gray'
 ).encode(
-    text=alt.value("Source: ANES 2024 XYZ"),
+    text=alt.value("Source: 2024 American National Election Study"),
     x=alt.value(800 - 10),
-    y=alt.value(500 - 10),
+    y=alt.value(525 - 10),
 )
 
 hexmap = (hexes + hex_labels + source_text).project(
@@ -103,6 +103,5 @@ hexmap = (hexes + hex_labels + source_text).project(
 ).configure_view(stroke=None)
 
 hexmap
-
 
 hexmap.save('a-chart.pdf')
