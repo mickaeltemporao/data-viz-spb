@@ -81,7 +81,7 @@ Les rendus débouchent sur un rendu final prenant la forme d'une infographie abo
 - [From Data to Viz](https://www.data-to-viz.com/)
 - [Dataviz Catalogue](https://datavizcatalogue.com/)
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
-- et une liste de ressources [ici](https://github.com/mickaeltemporao/data-viz-spb/blob/main/ressources.md)
+- et une liste de ressources [ici](https://github.com/SciencesPoBordeaux/data-viz/blob/main/ressources.md)
 
 ## À propos des enseignant-e
 <!-- TODO : PRÉCISER LES TYPES DE NUMÉROS DE CLAQUETTES POUR BROADWAY ? -->
@@ -92,4 +92,5 @@ Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation **de nu
 
 ### Liens Séance 1
 
-- [Demo?](https://githubtocolab.com/mickaeltemporao/data-viz-spb/blob/main/notebooks/demo_intro.ipynb)
+- [slides-S1](https://sciencespobordeaux.github.io/data-viz/slides/slides-S1/slides-1.html)
+- [Demo_intro](https://githubtocolab.com/SciencesPoBordeaux/data-viz/blob/main/notebooks/demo_intro.ipynb)
