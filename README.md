@@ -55,13 +55,13 @@ Selon le groupe et l'enseignant.
 Ce module, adoptant une approche incrémentale, propose une évaluation continue par la remise de rendus intermédiaires.
 Les rendus débouchent sur un rendu final prenant la forme d'une infographie aboutie.
 
-| Date rendu         | Évaluation                                                              | Poids | Description                                                                 |
-|--------------------|-------------------------------------------------------------------------|-------|-----------------------------------------------------------------------------|
-| Séance 5           | Modifications de titres/sous-titres                                     | 10%   | Capacité à choisir des éléments éditoriaux clairs et pertinents             |
-| Séance 7           | Identification de deux variables et calcul de statistiques descriptives | 10%   | Rigueur dans le choix des variables et la qualité du traitement             |
-| Séance 9           | Prototype de visualisation univariée                                    | 10%   | Pertinence du graphique et lisibilité                                       |
-| Séance 11          | Prototype de visualisation bivariée                                     | 10%   | Pertinence du graphique et lisibilité                                       |
-| Final (**10 avril**)   | Figure finale                                                           | 60%   | Une visualisation aboutie, respectant tous les critères de qualité attendus |
+ | Date rendu           | Évaluation                                                              | Poids | Description                                                                 |
+ |----------------------|-------------------------------------------------------------------------|-------|-----------------------------------------------------------------------------|
+ | Séance 5             | Modifications de titres/sous-titres                                     | 10%   | Capacité à choisir des éléments éditoriaux clairs et pertinents             |
+ | Séance 7             | Identification de deux variables et calcul de statistiques descriptives | 10%   | Rigueur dans le choix des variables et la qualité du traitement             |
+ | Séance 9             | Prototype de visualisation univariée                                    | 10%   | Pertinence du graphique et lisibilité                                       |
+ | Séance 11            | Prototype de visualisation bivariée                                     | 10%   | Pertinence du graphique et lisibilité                                       |
+ | Final (**10 avril**) | Figure finale                                                           | 60%   | Une visualisation aboutie, respectant tous les critères de qualité attendus |
 
 **Critères de réussite de la figure finale :**
 
@@ -76,21 +76,22 @@ Les rendus débouchent sur un rendu final prenant la forme d'une infographie abo
   - une mise en forme adéquate
 - enregistre la figure dans un format de sortie adapté (png, pdf, html…)
 
-### Bibliographie
+## Liens Utiles
+
+### Liens Séance 1
+
+- [slides-S1](https://sciencespobordeaux.github.io/data-viz/slides/slides-S1/slides-1.html)
+- [Demo_intro](https://githubtocolab.com/SciencesPoBordeaux/data-viz/blob/main/notebooks/demo_intro.ipynb)
+
+## Bibliographie
 
 - [From Data to Viz](https://www.data-to-viz.com/)
 - [Dataviz Catalogue](https://datavizcatalogue.com/)
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
 - et une liste de ressources [ici](https://github.com/SciencesPoBordeaux/data-viz/blob/main/ressources.md)
 
-## À propos des enseignant-e
+## À propos
 <!-- TODO : PRÉCISER LES TYPES DE NUMÉROS DE CLAQUETTES POUR BROADWAY ? -->
 
 Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation **de numéros de claquettes**.
 
-## Liens
-
-### Liens Séance 1
-
-- [slides-S1](https://sciencespobordeaux.github.io/data-viz/slides/slides-S1/slides-1.html)
-- [Demo_intro](https://githubtocolab.com/SciencesPoBordeaux/data-viz/blob/main/notebooks/demo_intro.ipynb)
