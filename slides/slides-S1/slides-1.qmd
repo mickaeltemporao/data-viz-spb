@@ -97,7 +97,7 @@ Dataviz / infographie / figures scientifiques
 ---
 
 ## Organisation du cours
-- Le [syllabus](https://github.com/mickaeltemporao/data-viz-spb/blob/main/README.md) précise tout ça
+- Le [syllabus](https://github.com/SciencesPoBordeaux/data-viz/blob/main/README.md) précise tout ça
 - (Les slides suivantes reprennent les infos)
 
 ---
@@ -196,7 +196,7 @@ Plein, vues plus tard, mais notamment :
 
 - [From Data to Viz](https://www.data-to-viz.com/)
 - [Dataviz Catalogue](https://datavizcatalogue.com/)
-- et une liste de ressources [ici](https://github.com/mickaeltemporao/data-viz-spb/blob/main/ressources.md)
+- et une liste de ressources [ici](https://github.com/SciencesPoBordeaux/data-viz/blob/main/ressources.md)
 
 
 ---
