@@ -14,7 +14,7 @@ Module 8
 Module 9 - M3 | 10% | 02 une figure (prototype de vizu univariée)  
 Module 10  
 Module 11 - M4 | 10% | 02 une figure (prototype de vizu bivariée)  
-Module 12 - M5 | 60% | 12 final belle figure  
+Module 12 - M5 | 60% | 12 figure finale
 
 ## Planning
 

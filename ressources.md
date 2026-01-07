@@ -6,6 +6,7 @@
 
 - <https://www.data-to-viz.com/>
 - <https://datavizcatalogue.com/>
+- <https://datavizproject.com/>
 - <https://infogram.com/blog/choose-the-right-chart/>
 
 ## Livres
@@ -15,11 +16,13 @@
 ## Cours en lignes / sites
 
 - <https://opendatafrance.gitbook.io/editorialisation-des-donnees-publiques>
+- <https://opendatafrance.gitbook.io/guide-pour-concevoir-de-bonnes-datavisualisations>
 - <https://www.scientificdiscovery.dev/p/salonis-guide-to-data-visualization>
 - <https://datavizs25.classes.andrewheiss.com/syllabus.html>
 
 ## Guidelines / checklists
 
+- <https://opendatafrance.gitbook.io/editorialisation-des-donnees-publiques/documentation-opendatafrance/plaquette-poster-dviz>
 - <https://uxdesign.cc/20-ideas-for-better-data-visualization-73f7e3c2782d>
 - <https://robjhyndman.com/hyndsight/graphics/>
 - <https://helenajamborwrites.netlify.app/posts/24-9_figurehero/>
