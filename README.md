@@ -1,22 +1,23 @@
-# Description de l’atelier
-
-## Présentation
+# Initiation à la Data Visualisation
 
 Comment faire passer un message simple à partir d'informations complexes ?  
 Dans un monde où les données sont omniprésentes, la capacité à produire des visualisations est devenue une compétence essentielle pour les journalistes, chercheur·e·s ou tout·e professionnel·le se confrontant à des données dans ses travaux ou sa prise de décision.
 
 Cet atelier propose une initiation progressive à la data visualisation à l'aide du langage Python. Aucun prérequis dans ces domaines n'est exigé.
 
+<img src="figures/visualization.png" width="650" />
+
 En s'inscrivant dans une réflexion sur les usages de la dataviz en sciences sociales, il s'agira d'apprendre à manipuler et simplifier des données empiriques pour produire des visualisations claires ayant un message précis. Tout au long du module des thèmes tels que la polarisation, le knowledge gap, la participation électorale ou encore la confiance politique seront explorés.
 
-## À la fin du semestre, vous saurez
+
+### À la fin du semestre, vous saurez
 
 - Concevoir et produire des graphiques pour vos projets.
 - Réaliser les étapes clés d'un projet de visualisation : chargement, préparation, analyse, et production graphique.
 - Choisir un type de visualisation pertinent selon les données et le message que vous souhaitez véhiculer.
 - Mobiliser des bibliothèques Python devenues incontournables en data visualisation.
 
-## Format du cours et programme prévisionnel
+### Format du cours et programme prévisionnel
 
 Les séances sont organisées en format atelier. Chaque séance comportera une dimension pratique, avec des temps d'application et exercices sur des cas concrets. Le module est organisé en séquences progressives : (1) installation de l’environnement de travail, (2) introduction au traitement et la manipulation de données, (3) réalisation de différents types de visualisations.
 
@@ -46,11 +47,11 @@ Bloc 3 – Visualisation de données (6 séances)
 
 <!-- TODO: raffiner les types de visualisation qui seront présentées -->
 
-## Calendrier et créneaux horaire
+### Calendrier et créneaux horaire
 
 Selon le groupe et l'enseignant.
 
-## Modes de validation
+### Modes de validation
 
 Ce module, adoptant une approche incrémentale, propose une évaluation continue par la remise de rendus intermédiaires.
 Les rendus débouchent sur un rendu final prenant la forme d'une infographie aboutie.
@@ -76,21 +77,25 @@ Les rendus débouchent sur un rendu final prenant la forme d'une infographie abo
   - une mise en forme adéquate
 - enregistre la figure dans un format de sortie adapté (png, pdf, html…)
 
-## Liens Utiles
+### Liens Utiles
 
-### Liens Séance 1
+#### Liens Séance 1
 
 - [slides-S1](https://sciencespobordeaux.github.io/data-viz/slides/slides-S1/slides-1.html)
 - [Demo_intro](https://githubtocolab.com/SciencesPoBordeaux/data-viz/blob/main/notebooks/demo_intro.ipynb)
+- [Donnés: ANES 2024](https://electionstudies.org/data-center/2024-time-series-study/)
 
-## Bibliographie
+#### Prendre RDV
+- [Mickael Temporão](https://calendar.app.google/AU48bCi41zpUHgCh6)
+
+### Bibliographie
 
 - [From Data to Viz](https://www.data-to-viz.com/)
 - [Dataviz Catalogue](https://datavizcatalogue.com/)
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
 - et une liste de ressources [ici](https://github.com/SciencesPoBordeaux/data-viz/blob/main/ressources.md)
 
-## À propos
+### À propos
 <!-- TODO : PRÉCISER LES TYPES DE NUMÉROS DE CLAQUETTES POUR BROADWAY ? -->
 
 Léo Mignot et Mickael Temporão sont spécialistes dans la réalisation **de numéros de claquettes**.
