@@ -5,7 +5,7 @@ Dans un monde où les données sont omniprésentes, la capacité à produire des
 
 Cet atelier propose une initiation progressive à la data visualisation à l'aide du langage Python. Aucun prérequis dans ces domaines n'est exigé.
 
-<img src="figures/visualization.png" width="400" />
+<img src="figures/visualization.png" width="650" />
 
 En s'inscrivant dans une réflexion sur les usages de la dataviz en sciences sociales, il s'agira d'apprendre à manipuler et simplifier des données empiriques pour produire des visualisations claires ayant un message précis. Tout au long du module des thèmes tels que la polarisation, le knowledge gap, la participation électorale ou encore la confiance politique seront explorés.
 
